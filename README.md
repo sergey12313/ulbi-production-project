@@ -3,8 +3,8 @@
 
 ### Webpack. Введение в арх-ру. Code splitting. Css Modules
 - [x]  1 Начало разработки Основы Webpack. Добавляем TypeScript
-- [ ]  2 Декомпозиция конфига. Опции конфигурации
-- [ ]  3 Webpack-dev-server. Переменные окружения (env)
+- [x]  2 Декомпозиция конфига. Опции конфигурации
+- [x]  3 Webpack-dev-server. Переменные окружения (env)
 - [ ]  4 Подключаем React и настраиваем css в webpack
 - [ ]  5 Настраиваем css modules
 - [ ]  6 Роутинг Code splitting Lazy Suspence
