@@ -1,6 +1,8 @@
 import {RuleSetRule} from "webpack";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import {BuildOptions} from "./types/config";
 
-export const buildLoaders = (): Array<RuleSetRule> => {
+export const buildLoaders = ({isDev}: BuildOptions): Array<RuleSetRule> => {
     const typescriptLoader: RuleSetRule = {
         test: /\.tsx?$/,
         use: 'ts-loader',
@@ -9,9 +11,19 @@ export const buildLoaders = (): Array<RuleSetRule> => {
     const sassLoader: RuleSetRule =      {
             test: /\.s[ac]ss$/i,
             use: [
-                "style-loader",
-                "css-loader",
+
+                isDev ? "style-loader" : MiniCssExtractPlugin.loader,
                 {
+                    loader: "css-loader",
+                    options: {
+                        modules: {
+                            localIdentName: isDev ? '[path][name]__[local]' : '[hash:base64:8]' ,
+                            auto: (resPath: string) => resPath.includes('.module')
+                        },
+
+                    }
+                },
+                                {
                     loader: "sass-loader",
                     options: {
                         implementation: require("dart-sass"),

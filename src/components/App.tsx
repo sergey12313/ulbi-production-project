@@ -1,11 +1,12 @@
 import {FC, useState} from "react";
-import "./style.scss"
+
+import styles from "./App.module.scss"
 
 export const App: FC = () => {
     const [counter, setCounter] = useState(0)
 
-    return <div>
+    return <div className="app">
         {counter}
-        <button className={'btn'} onClick={()=>setCounter(counter=> counter+1)}>increment</button>
+        <button className={styles.red} onClick={()=>setCounter(counter=> counter+1)}>increment</button>
     </div>
 }
