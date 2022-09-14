@@ -11,8 +11,8 @@ export const buildWebpackConfig = (options: BuildOptions): webpack.Configuration
         mode: mode,
         entry: paths.entry,
         output: {
-            path: paths.build,
             filename: "[name].[contenthash].js",
+            path: paths.build,
             clean: true
         },
         resolve: buildResolvers(),
@@ -20,7 +20,8 @@ export const buildWebpackConfig = (options: BuildOptions): webpack.Configuration
         module: {
             rules: buildLoaders(options)
         },
-        plugins: buildPlugins(paths),
+
+        plugins: buildPlugins(options),
         devtool: isDev ? 'inline-source-map': false,
         devServer: isDev ? buildDevServer(options) : undefined
     }

@@ -8,7 +8,7 @@
 - [x]  3 Webpack-dev-server. Переменные окружения (env)
 - [x]  4 Подключаем React и настраиваем css в webpack
 - [x]  5 Настраиваем css modules
-- [ ]  6 Роутинг Code splitting Lazy Suspence
+- [x]  6 Роутинг Code splitting Lazy Suspence
 - [ ]  7 Организация стилей. Добавляем темы
 - [ ]  8 classNames создаем git репозиторий
 - [ ]  9 Архитектура. введение. Теория
