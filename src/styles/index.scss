@@ -7,4 +7,7 @@
 
 .app {
   font: var(--font-m);
+  background: var(--bg-color);
+  color: var(--font-color);
+  min-height: 100vh;
 }

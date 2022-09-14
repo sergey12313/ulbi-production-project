@@ -1,5 +1,8 @@
 :root {
-   --font-family-main:'Roboto', sans-serif;
+   --font-family-main: Menlo, Monaco, Lucida Console, Liberation Mono,
+   DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+   serif;
+
 
   --font-size-s: 14px;
 
@@ -12,7 +15,7 @@
   --line-height-l: 32px;
 
   --font-s: var(--font-size-s) / var(--line-height-s) var(--font-family-main);
-  --font-m: 500 var(--font-size-m) / var(--line-height-m) var(--font-family-main);
+  --font-m: var(--font-size-m) / var(--line-height-m) var(--font-family-main);
   --font-l: var(--font-size-l) / var(--line-height-l) var(--font-family-main);
 
 }
