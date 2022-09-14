@@ -1,0 +1,18 @@
+:root {
+   --font-family-main:'Roboto', sans-serif;
+
+  --font-size-s: 14px;
+
+  --font-size-m: 16px;
+
+  --font-size-l: 24px;
+
+  --line-height-s: 20px;
+  --line-height-m: 24px;
+  --line-height-l: 32px;
+
+  --font-s: var(--font-size-s) / var(--line-height-s) var(--font-family-main);
+  --font-m: 500 var(--font-size-m) / var(--line-height-m) var(--font-family-main);
+  --font-l: var(--font-size-l) / var(--line-height-l) var(--font-family-main);
+
+}

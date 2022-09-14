@@ -1,5 +1,5 @@
 import {FC, Suspense} from "react";
-
+import "./styles/index.scss"
 
 import {Link, Route, Routes} from "react-router-dom";
 
