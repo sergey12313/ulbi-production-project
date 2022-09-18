@@ -2,7 +2,7 @@
 
 <img src="doc/images/ulbi.jpeg"  alt="ulbi_photo">
 
-### Webpack. Введение в арх-ру. Code splitting. Css Modules
+### Webpack. Введение в архитектуру. Code splitting. Css Modules
 - [x]  1 Начало разработки Основы Webpack. Добавляем TypeScript
 - [x]  2 Декомпозиция конфига. Опции конфигурации
 - [x]  3 Webpack-dev-server. Переменные окружения (env)
@@ -13,6 +13,7 @@
 - [x]  8 classNames создаем git репозиторий
 - [X]  9 Архитектура. введение. Теория
 - [ ]  10 Архитектура. Начинаем внедрять. Основы
+### Router, App Layout, i18n, eslint, stylelint, jest
 - [ ]  11 AppRouter. Конфиг для роутера
 - [ ]  12 Navbar. Шаблоны для разработки. Первый UI Kit компонент
 - [ ]  13 Svg loader. File loader. Button UI kit
