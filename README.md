@@ -20,7 +20,6 @@
 - [ ]  15 i18n Интернационализация. Define plugin. Плагин для переводов
 - [ ]  16 Webpack hot module replacement
 - [ ]  17 Babel. Extract plugin [optional]
-- [ ]  Необязательный урок
 - [ ]  18 Настраиваем EsLint. Исправляем ошибки
 - [ ]  19 Stylelint. Plugin for i18next
 - [ ]  20 Тестовая среда. Настраиваем Jest. Пишем первый тест
