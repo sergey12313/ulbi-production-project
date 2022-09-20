@@ -1,6 +1,7 @@
 
 import {classNames} from "shared/lib";
-import {AppLink} from "shared/ui/AppLink/AppLink";
+import {AppLink} from "shared/ui";
+
 
 export const Navbar = () => {
     return (<header>
