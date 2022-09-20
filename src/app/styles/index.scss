@@ -1,9 +1,9 @@
 //noinspection CssUnknownTarget
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import "reset";
-@import "variables/globals";
-@import "themes/dark";
-@import "themes/normal";
+@import "./variables/globals";
+@import "./themes/dark";
+@import "./themes/normal";
 
 .app {
   font: var(--font-m);
