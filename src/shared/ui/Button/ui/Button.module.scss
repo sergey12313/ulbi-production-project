@@ -1,0 +1,61 @@
+.Button {
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  border-radius: 0;
+  outline: 0;
+  appearance: none;
+  font-family: inherit;
+  font: var(--font-s);
+  padding: 0.3rem 1rem;
+  //font-size: 1rem;
+  display: inline-block;
+  position: relative;
+  font-weight: lighter;
+  :active {
+    box-shadow: none;
+  }
+}
+
+.ghost{
+  background: transparent;
+}
+
+
+.default {
+  border-color: var(--font-color);
+  background: var(--font-color);
+  color: var(--invert-font-color);
+  &.ghost{
+    color: var(--font-color);
+    background: transparent;
+    &:hover {
+      background: transparent;
+      color: var(--secondary-color);
+    }
+  }
+  &:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+}
+.error {
+  border-color: var(--error-color);
+  background: var(--error-color);
+  &.ghost{
+    color: var(--error-color);
+    background: transparent;
+  }
+}
+.primary {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  &.ghost{
+    color: var(--primary-color);
+    background: transparent;
+  }
+}
+.block {
+  display: block;
+  width: 100%;
+}

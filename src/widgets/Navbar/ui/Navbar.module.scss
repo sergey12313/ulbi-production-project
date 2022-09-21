@@ -1,0 +1,27 @@
+.Header{
+  height: var(--header-height);
+  display: flex;
+}
+.headerContainer {
+  display: flex;
+  align-items: center;
+
+}
+.headerSideMenu {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+  img{
+    width: 16px;
+    filter: var(--filter-black-to_primary);
+    height: 16px;
+
+  }
+
+}

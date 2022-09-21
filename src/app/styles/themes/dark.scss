@@ -1,7 +1,10 @@
 .app.dark {
   --bg-color: #222225;
   --font-color: #e8e9ed;
+  --invert-font-color: #222225;
   --primary-color: #62c4ff;
+
   --secondary-color: #a3abba;
   --error-color: #ff3c74;
+  --filter-black-to_primary: invert(85%) sepia(25%) saturate(7489%) hue-rotate(176deg) brightness(102%) contrast(101%);
 }

@@ -1,0 +1,21 @@
+.ThemeSwitcher {
+  size: var(--font-m);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--font-color);
+    &:hover {
+      fill: var(--primary-color);
+    }
+  }
+}
+//.icon {
+//
+//}
