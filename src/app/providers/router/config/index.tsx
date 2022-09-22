@@ -1,4 +1,4 @@
-import {AppRoutes, RoutePath} from "shared/config";
+import {AppRoutes, RoutePath} from "shared/config/routerConfig";
 import {RouteProps} from "react-router-dom";
 import {MainPage} from "pages/MainPage";
 import {AboutPage} from "pages/AboutPage";

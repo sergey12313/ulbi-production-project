@@ -5,6 +5,8 @@ import {BrowserRouter} from "react-router-dom";
 import {ThemeProvider} from "shared/theme-context/ThemeProvider";
 import { StrictMode } from 'react';
 
+import "shared/config/i18n/i18n";
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
    <StrictMode>
     <BrowserRouter>

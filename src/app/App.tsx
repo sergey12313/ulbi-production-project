@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, Suspense} from "react";
 import "./styles/index.scss"
 import {useTheme} from "shared/theme-context";
 import {classNames} from "shared/lib";
@@ -11,6 +11,7 @@ export const App: FC = () => {
     const {theme, toggleTheme} = useTheme()
 
     return <div className={classNames('app', theme)}>
+        <Suspense fallback="loading">
         <Navbar/>
         <div className='page container mx-auto'>
             <aside className='aside'><Sidebar/></aside>
@@ -19,6 +20,6 @@ export const App: FC = () => {
             </main>
 
         </div>
-
+        </Suspense>
     </div>
 }

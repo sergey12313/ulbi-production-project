@@ -1,10 +1,10 @@
-import { ProgressPlugin, WebpackPluginInstance} from "webpack"
+import {DefinePlugin, ProgressPlugin, WebpackPluginInstance} from "webpack"
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import {BuildOptions} from "./types/config";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 
-export const buildPlugins = ({paths}: BuildOptions): Array<WebpackPluginInstance> => {
+export const buildPlugins = ({paths, isDev}: BuildOptions): Array<WebpackPluginInstance> => {
     return  [
         new ProgressPlugin(),
         new MiniCssExtractPlugin({
@@ -16,6 +16,9 @@ export const buildPlugins = ({paths}: BuildOptions): Array<WebpackPluginInstance
             template: paths.html,
             inject: "body"
         }),
+        new DefinePlugin({
+            __IS_DEV__: JSON.stringify(isDev)
+        })
 
     ]
 
