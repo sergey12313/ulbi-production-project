@@ -1,6 +1,12 @@
 .Header{
   height: var(--header-height);
   display: flex;
+  position: fixed;
+  width: 100%;
+  background: var(--bg-color);
+  border-bottom: 1px solid var(--font-color);
+  z-index: 1000;
+
 }
 .headerContainer {
   display: flex;

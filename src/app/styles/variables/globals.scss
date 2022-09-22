@@ -18,6 +18,8 @@
   --font-m: var(--font-size-m) / var(--line-height-m) var(--font-family-main);
   --font-l: var(--font-size-l) / var(--line-height-l) var(--font-family-main);
 
-  --header-height: 54px
+  --header-height: 54px;
+  --global-space: 8px;
+  --aside-top: calc(var(--header-height) + var(--global-space));
 
 }

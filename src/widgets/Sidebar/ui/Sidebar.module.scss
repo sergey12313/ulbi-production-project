@@ -1,0 +1,33 @@
+.Aside {
+  width: 300px;
+  position: sticky;
+  top: var(--aside-top);
+  border: solid 1px var(--secondary-color);
+  padding: 8px;
+  transition: width 0.3s;
+  &.collapsed {
+    width:100px;
+  }
+
+  .btn {
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    overflow: hidden;
+    right:-1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 16px;
+    border-color: var(--secondary-color);
+    border-right-color: (var(--bg-color));
+    &:hover {
+      border-right-color: (var(--bg-color));
+    }
+    padding: 0;
+    span {
+      padding: 0;
+      font-size: 14px;
+    }
+  }
+}

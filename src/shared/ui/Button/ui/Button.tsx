@@ -15,5 +15,5 @@ export  interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
 }
 
 export const Button: FC<ButtonProps> = ({className, variant=Variant.DEFAULT, block=false, ghost= false, children,...otherProps}) => {
-    return <button className={classNames(styles.Button, styles[variant], {[styles['block']]: block, [styles['ghost']]: ghost }, className)}>{children}</button>;
+    return <button className={classNames(className, styles.Button, styles[variant], {[styles['block']]: block, [styles['ghost']]: ghost })} {...otherProps}>{children}</button>;
 };

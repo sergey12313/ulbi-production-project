@@ -10,6 +10,9 @@
   background: var(--bg-color);
   color: var(--font-color);
   min-height: 100vh;
+  display: flex;
+  position: relative;
+
 }
 
 @keyframes cursor {
@@ -71,4 +74,20 @@
 }
 .mx-auto {
   margin: 0 auto;
+}
+.page {
+  display: flex;
+  margin-top: var(--header-height );
+  gap: var(--global-space);
+  padding-top: 8px;
+
+}
+.main {
+  flex-grow: 1;
+  height: 900vh;
+  padding:0  8px;
+
+}
+.aside {
+  position: relative;
 }
