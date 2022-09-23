@@ -15,9 +15,9 @@
 - [X]  10 Архитектура. Начинаем внедрять. Основы
 - [X]  11 AppRouter. Конфиг для роутера
 - [X]  12 Navbar. Шаблоны для разработки. Первый UI Kit компонент
-- [x]  13 Svg loader. File loader. Button UI kit
-- [ ]  14 Sidebar. Layout приложения
-- [ ]  15 i18n Интернационализация. Define plugin. Плагин для переводов
+- [x]  13 Svg loader. File loader. IconButton UI kit
+- [x]  14 Sidebar. Layout приложения
+- [x]  15 i18n Интернационализация. Define plugin. Плагин для переводов
 - [ ]  16 Webpack hot module replacement
 - [ ]  17 Babel. Extract plugin [optional]
 - [ ]  18 Настраиваем EsLint. Исправляем ошибки

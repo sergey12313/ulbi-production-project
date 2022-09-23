@@ -5,7 +5,8 @@ import {AppLink} from "shared/ui";
 import {ThemeSwitcher} from "widgets/ThemeSwitcher";
 import logo from 'shared/assets/images/ulbiLogo.png'
 import {useTranslation} from "react-i18next";
-import {Button} from "shared/ui/Button";
+import {Button, IconButton} from "shared/ui/Button";
+;
 
 export const Navbar = () => {
     const { t, i18n } = useTranslation();
@@ -22,9 +23,7 @@ export const Navbar = () => {
                 <AppLink to={'/'}>{t('home')}</AppLink>
                 <AppLink to={'/about'}>{t('about')}</AppLink>
                 <ThemeSwitcher/>
-                <Button ghost onClick={toggle}><span className="material-symbols-outlined">
-language
-</span></Button>
+                <IconButton ghost onClick={toggle}>language</IconButton>
             </div>
         </div>
     </header>)

@@ -1,1 +1,2 @@
-export * from "./ui/Button"
+export * from "./Button/ui/Button"
+export * from "./IconButton/ui/IconButton"

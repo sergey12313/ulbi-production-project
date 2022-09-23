@@ -41,6 +41,7 @@
 }
 .error {
   border-color: var(--error-color);
+  //background: var(--error-color);
   background: var(--error-color);
   &.ghost{
     color: var(--error-color);
