@@ -1,4 +1,4 @@
-.Header{
+.Header {
   height: var(--header-height);
   display: flex;
   position: fixed;
@@ -6,30 +6,28 @@
   background: var(--bg-color);
   border-bottom: 1px solid var(--font-color);
   z-index: 1000;
-
 }
+
 .headerContainer {
   display: flex;
   align-items: center;
-
 }
+
 .headerSideMenu {
   margin-left: auto;
   display: flex;
   align-items: center;
   gap: 16px;
-
 }
+
 .logo {
   display: flex;
   align-items: center;
-
   gap: 5px;
-  img{
+
+  img {
     width: 16px;
-    filter: var(--filter-black-to_primary);
+    filter: var(--filter-black-to-primary);
     height: 16px;
-
   }
-
 }

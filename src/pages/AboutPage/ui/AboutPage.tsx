@@ -1,13 +1,9 @@
-import React, {FC} from 'react';
+import { FC } from 'react';
 
-interface AboutPageProps {
-
-}
+interface AboutPageProps {}
 
 const AboutPage: FC<AboutPageProps> = () => {
-    return <div>
-        AboutPage
-    </div>;
+  return <div>AboutPage</div>;
 };
 
-export default AboutPage
+export default AboutPage;

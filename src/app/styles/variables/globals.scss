@@ -1,25 +1,24 @@
 :root {
-   --font-family-main: Menlo, Monaco, Lucida Console, Liberation Mono,
-   DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-   serif;
-
-
+  --font-family-main:
+    menlo,
+    monaco,
+    lucida console,
+    liberation mono,
+    dejavu sans mono,
+    bitstream vera sans mono,
+    courier new,
+    monospace,
+    serif;
   --font-size-s: 14px;
-
   --font-size-m: 16px;
-
   --font-size-l: 24px;
-
   --line-height-s: 20px;
   --line-height-m: 24px;
   --line-height-l: 32px;
-
   --font-s: var(--font-size-s) / var(--line-height-s) var(--font-family-main);
   --font-m: var(--font-size-m) / var(--line-height-m) var(--font-family-main);
   --font-l: var(--font-size-l) / var(--line-height-l) var(--font-family-main);
-
   --header-height: 54px;
   --global-space: 8px;
   --aside-top: calc(var(--header-height) + var(--global-space));
-
 }

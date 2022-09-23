@@ -1,5 +1,5 @@
-//noinspection CssUnknownTarget
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+// noinspection CssUnknownTarget
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap";
 @import "reset";
 @import "./variables/globals";
 @import "./themes/dark";
@@ -12,20 +12,19 @@
   min-height: 100vh;
   display: flex;
   position: relative;
-
 }
 
 @keyframes cursor {
   0% {
-    opacity: 0
+    opacity: 0;
   }
 
   50% {
-    opacity: 1
+    opacity: 1;
   }
 
   to {
-    opacity: 0
+    opacity: 0;
   }
 }
 
@@ -34,60 +33,65 @@
   position: relative;
   white-space: nowrap;
 
-  &:before {
-    content: '> ';
+  &::before {
+    content: "> ";
     color: var(--font-color);
   }
-  &:after{
-    content: '';
+
+  &::after {
+    content: "";
     position: relative;
-    animation: cursor .8s infinite;
+    animation: cursor 0.8s infinite;
     display: inline-block;
     margin-left: 0.2em;
     bottom: -2px;
     height: 1em;
     background: var(--primary-color);
     width: 3px;
-
   }
 }
 
 .container {
   width: calc(100% - 16px);
 
-
   @media screen and (min-width: 540px) {
     width: 540px;
-
   }
+
   @media screen and (min-width: 768px) {
     width: 720px;
   }
+
   @media screen and (min-width: 992px) {
     width: 960px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 1140px;
-  }@media screen and (min-width: 1400px) {
+  }
+
+  @media screen and (min-width: 1400px) {
     width: 1320px;
   }
 }
+
 .mx-auto {
   margin: 0 auto;
 }
+
 .page {
   display: flex;
-  margin-top: var(--header-height );
+  margin-top: var(--header-height);
   gap: var(--global-space);
   padding-top: 8px;
-
 }
+
 .main {
   flex-grow: 1;
   height: 900vh;
-  padding:0  8px;
-
+  padding: 0 8px;
 }
+
 .aside {
   position: relative;
 }
