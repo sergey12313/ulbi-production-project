@@ -7,9 +7,10 @@ interface ThemeSwitcherProps {}
 export const ThemeSwitcher: FC<ThemeSwitcherProps> = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <IconButton ghost onClick={toggleTheme}>
-      {' '}
-      {theme === Theme.DARK ? 'light_mode' : 'dark_mode'}{' '}
-    </IconButton>
+    <IconButton
+      ghost
+      onClick={toggleTheme}
+      icon={theme === Theme.DARK ? 'light_mode' : 'dark_mode'}
+    />
   );
 };

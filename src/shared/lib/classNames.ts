@@ -17,6 +17,9 @@ export const classNames = (...classes: Array<any>): string => {
 
   classes.forEach((el) => {
     if (typeof el === 'string') {
+      if (el === '') {
+        return;
+      }
       result.push(el);
     } else if (typeof el === 'function') {
       return;
@@ -27,6 +30,9 @@ export const classNames = (...classes: Array<any>): string => {
     } else if (!el) {
       return;
     } else if (typeof el === 'number') {
+      if (el === 0) {
+        return;
+      }
       result.push(el.toString());
     } else if (Array.isArray(el)) {
       result.push(classNames(el));

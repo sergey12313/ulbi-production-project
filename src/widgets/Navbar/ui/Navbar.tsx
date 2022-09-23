@@ -22,9 +22,7 @@ export const Navbar = () => {
           <AppLink to={'/'}>{t('home')}</AppLink>
           <AppLink to={'/about'}>{t('about')}</AppLink>
           <ThemeSwitcher />
-          <IconButton ghost onClick={toggle}>
-            language
-          </IconButton>
+          <IconButton ghost onClick={toggle} icon='language' />
         </div>
       </div>
     </header>

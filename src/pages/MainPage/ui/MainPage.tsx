@@ -1,13 +1,15 @@
 import { FC } from 'react';
 import { Button, Variant } from 'shared/ui/Button';
 import styles from './MainPage.module.scss';
+import { useTranslation } from 'react-i18next';
 
 interface MainPageProps {}
 
 const MainPage: FC<MainPageProps> = () => {
+  const { t } = useTranslation();
   return (
     <div className={styles.MainPage}>
-      MainPage
+      {t('home')}
       <Button>Default</Button>
       <Button variant={Variant.PRIMARY}>Primary</Button>
       <Button variant={Variant.ERROR}>Default</Button>
